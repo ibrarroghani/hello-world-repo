@@ -1,0 +1,12 @@
+name: Hello world
+on:
+  push:
+    branches:
+      - main
+jobs:
+  hello-job:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+     - name: Echo text
+       run: echo "Hello, world!"
